@@ -1,0 +1,15 @@
+.box{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    width: 100vw;
+    height:70px;
+}
+.love{
+    animation: load 1s infinite linear alternate;
+}
+@keyframes load{
+    to{
+        transform:scale(1.5);
+    }
+}

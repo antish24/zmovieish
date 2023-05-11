@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track{
+  background: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(0, 115, 255);
+  height: 20px;
+}

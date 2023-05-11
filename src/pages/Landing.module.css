@@ -1,0 +1,152 @@
+.box{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content:center;
+    font-family: 'Oswald', sans-serif;
+    align-items: center;
+    flex-direction: column;
+}
+.box span{
+    font-size: 30px;
+}
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+.accountbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border: 1px solid rgb(0, 145, 255);
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.758);
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px rgba(0, 145, 255, 0.881);
+}
+.form{
+    display:flex;
+    flex-direction: column;
+}
+.accountbox label{
+    color: rgb(0, 145, 255);
+}
+
+.accountbox input{
+    padding: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: rgb(0, 145, 255,0.3);
+    color: white;
+}
+.account input:hover , input:active{
+    border-color:rgb(0, 145, 255);
+}
+.login{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.login button{
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    border-bottom: 2px solid black;
+    font-size:20px ;
+    background-color: rgba(0, 145, 255, 0.523);
+
+}
+.login button:active ,button:hover{
+    border-bottom-color: rgb(0, 255, 0);
+    background-color: rgb(0, 145, 255);
+    color: aliceblue;
+}
+
+.login{
+    color:rgb(0, 145, 255);
+}
+
+@media(max-width:500px){
+    .account{
+        width: 345px;
+    }
+}
+.accountbox div span{
+    width: 200px;
+    font-size: 13px;
+    color: rgb(255, 0, 0);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.welcom{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.welcom h2{
+    color:rgb(0, 145, 255) ;
+}
+.welcom button{
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    font-family:'Times New Roman', Times, serif;
+    border: 2px solid rgb(0,145,255);
+}
+.welcom button:hover {
+    background-color: rgb(0,145,255);
+    color: rgb(255, 255, 255);
+}
+.welcom button:active {
+    background-color: rgb(0,145,255);
+    color: rgb(255, 255, 255);
+}
+.bigc{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(0, 145, 255, 0.488);
+    display: flex;
+    justify-content: center;
+    animation: load 1s infinite linear alternate;
+    align-items: center;
+}
+.smallc{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgb(0, 145, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smallcc{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: rgba(0, 145, 255, 0.374);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smallc a{
+    animation: load 1s infinite linear alternate;
+}
+@keyframes load{
+    to{
+        transform: scale(.9);
+    }
+}

@@ -1,0 +1,102 @@
+.box{
+    width: 170px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px black;
+  font-family: sans-serif;
+  animation: load 1s linear alternate infinite;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.box:hover .play{
+  animation:pop 0.3s linear 1;
+  display: block;
+}
+.box:active .play{
+  animation:pop 0.3s linear 1;
+  display: block;
+}
+.playbox{
+  display: none;
+  position: absolute;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+}
+@keyframes pop{
+  50%  {transform: scale(1.2);}
+}
+.play{
+  display: none;
+  background-color:aqua;
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+}
+.playicon{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation:pop 1s infinite;
+}
+
+.poster{
+    height: 100%;
+    width: 100%;
+}
+.poster:empty{
+    background: red;
+}
+.poster img{
+    width: 170px;
+    height: auto;
+    object-fit: contain;
+}
+.date{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.845);
+    color: white;
+    padding: 5px;
+}
+.movieinfo{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movieinfo p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border:1px solid transparent;
+    padding: 2px;
+    border-radius: 4px;
+    width: 48px;
+}
+@keyframes load{
+    0%{
+        background-color: hsl(200,20%,80%);
+    }
+    100%{
+        background-color: hsl(200,20%,95%);
+    }
+}

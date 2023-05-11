@@ -1,0 +1,120 @@
+.allbox{
+    width: 100vw;
+    height:max-content;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 100%;
+}
+.top{
+width:95vw;
+height:fit-content;
+margin-left: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.top button{
+    border: none;
+    box-shadow: 3px 3px 7px black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.movie{
+    width: 100%;
+    display:grid;
+    grid-template-columns:auto auto auto auto auto auto auto;
+    justify-content: space-evenly;
+    grid-row-gap: 5px;
+    min-height: 600px;
+}
+.movie:empty{
+    animation: load 1s infinite alternate linear;
+}
+@keyframes load{
+    0%{
+        background-color: hsl(200,20%,80%);
+    }
+    100%{
+        background-color: hsl(200,20%,95%);
+    }
+}
+@media(max-width:1270px){
+    .movie{
+    grid-template-columns: auto auto auto auto auto auto;
+    }
+}
+@media(max-width:1128px){
+    .movie{
+    grid-template-columns:auto auto auto auto auto;
+    }
+}
+@media(max-width:925px){
+    .movie{
+    grid-template-columns:auto auto auto auto;
+    }
+}
+@media(max-width:730px){
+    .movie{
+    grid-template-columns:auto auto auto;
+        }
+}
+@media(max-width:550px){
+    .movie{
+    grid-template-columns:auto auto;
+        }
+}
+@media(max-width:350px){
+    .movie{
+    grid-template-columns:auto;
+        }
+}
+
+.pagebtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pagenum{
+    display:none;
+    height: max-content;
+    box-shadow: 3px 3px 7px black;
+    padding: 5px;
+    width: max-content;
+}
+.btns{
+    margin-top: 10px;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns button{
+    display: flex;
+    justify-content: center;
+    box-shadow: 3px 3px 7px black;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    width: 30px;
+    margin: 5px;
+    font-size: 20px;
+    border: 3px solid transparent;
+}
+.btns button:hover{
+    border-color: rgb(0, 115, 255);
+}
+.btns button:active{
+    border-color: rgb(0, 115, 255);
+}
+@media(max-width:430px){
+    .pagebtns{
+        display: none;
+    }
+    .pagenum{
+        display: block;
+    }
+}
